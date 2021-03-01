@@ -1,0 +1,18 @@
+<button (click)="logout($event)">Выйти</button>
+<p>device-list works!</p>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Название</th>
+      <th>Дата последней активности</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let device of devices">
+      <td>{{device.id}}</td>
+      <td>{{device.name}}</td>
+      <td>{{device.last_active | date:'dd.MM.YY HH:mm'}}</td>
+    </tr>
+  </tbody>
+</table>

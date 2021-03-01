@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  nUrl: 'https://core.nekta.cloud/api'
 };
